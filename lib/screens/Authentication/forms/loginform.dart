@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:wedding_application/screens/Authentication/forms/forgotpassword.dart';
 import 'package:wedding_application/screens/Home/home.dart';
@@ -12,14 +11,10 @@ class LoginF extends StatefulWidget {
 }
 
 class _LoginFState extends State<LoginF> with TickerProviderStateMixin {
- 
-
   @override
   void initState() {
     super.initState();
-
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +25,7 @@ class _LoginFState extends State<LoginF> with TickerProviderStateMixin {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => OnboardingScreen(),
+                  builder: (context) => const OnboardingScreen(),
                 ));
           },
           child: const Text(
@@ -74,7 +69,9 @@ class _LoginFState extends State<LoginF> with TickerProviderStateMixin {
                 ),
               ),
             ),
-            const SizedBox(height: 20,),
+            const SizedBox(
+              height: 20,
+            ),
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: TextFormField(
@@ -88,8 +85,10 @@ class _LoginFState extends State<LoginF> with TickerProviderStateMixin {
                 ),
               ),
             ),
-            const SizedBox(height: 20,),
-             Padding(
+            const SizedBox(
+              height: 20,
+            ),
+            Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: TextFormField(
                 decoration: const InputDecoration(
@@ -135,7 +134,11 @@ class _LoginFState extends State<LoginF> with TickerProviderStateMixin {
                   fixedSize: MaterialStateProperty.all(const Size(200, 50)),
                   backgroundColor:
                       const MaterialStatePropertyAll(Colors.lightBlueAccent)),
-              child: const Text("Login"),
+              child: const Text(
+                "Sign In",
+                style: TextStyle(
+                    fontSize: 20, fontFamily: String.fromEnvironment("Struti")),
+              ),
             )
           ],
         ),

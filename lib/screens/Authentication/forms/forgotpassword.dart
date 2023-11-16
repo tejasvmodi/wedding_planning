@@ -45,13 +45,14 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               decoration: const InputDecoration(
                 label: Text(
                   "Enter your Email",
-                  style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic),
+                  style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
                 ),
                 border: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.blue)),
               ),
             ),
           ),
+          const SizedBox(height: 20,),
           Center(
             child: TextButton(
                 onPressed: () {
@@ -61,7 +62,11 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                         builder: (context) => const LoginF(),
                       ));
                 },
-                child: const Text("Send Code",style: TextStyle(fontSize: 16,),)),
+                              style: ButtonStyle(
+                  fixedSize: MaterialStateProperty.all(const Size(200, 50)),
+                  backgroundColor:
+                      const MaterialStatePropertyAll(Colors.green)),
+            child: const Text("Send Code",style: TextStyle(fontSize: 16,color: Colors.black,fontWeight: FontWeight.bold),)),
           )
         ],
       ),
