@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wedding_application/screens/Authentication/forms/loginform.dart';
 
 class ForgotPassword extends StatefulWidget {
   const ForgotPassword({super.key});
@@ -39,16 +40,28 @@ class _ForgotPasswordState extends State<ForgotPassword> {
             height: 20,
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 20,right: 20),
+            padding: const EdgeInsets.only(left: 20, right: 20),
             child: TextFormField(
               decoration: const InputDecoration(
-                  label: Text(
-                "Enter your Email",
-                style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic),
-              ),
-              border: OutlineInputBorder(borderSide:BorderSide(color: Colors.blue) ),
+                label: Text(
+                  "Enter your Email",
+                  style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic),
+                ),
+                border: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.blue)),
               ),
             ),
+          ),
+          Center(
+            child: TextButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginF(),
+                      ));
+                },
+                child: const Text("Send Code",style: TextStyle(fontSize: 16,),)),
           )
         ],
       ),

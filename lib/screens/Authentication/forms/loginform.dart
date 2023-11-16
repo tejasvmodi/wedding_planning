@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:wedding_application/screens/Authentication/forms/forgotpassword.dart';
 import 'package:wedding_application/screens/Home/home.dart';
@@ -11,28 +12,14 @@ class LoginF extends StatefulWidget {
 }
 
 class _LoginFState extends State<LoginF> with TickerProviderStateMixin {
-  late AnimationController _controller;
-  late Animation<double> _animation;
+ 
 
   @override
   void initState() {
     super.initState();
 
-    _controller = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 500),
-    );
-
-    _animation = Tween<double>(begin: 0, end: 1).animate(_controller);
-
-    _controller.forward();
   }
 
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -87,68 +74,35 @@ class _LoginFState extends State<LoginF> with TickerProviderStateMixin {
                 ),
               ),
             ),
-
+            const SizedBox(height: 20,),
             Padding(
-              padding: const EdgeInsets.all(18.0),
-              child: AnimatedBuilder(
-                animation: _animation,
-                builder: (context, child) {
-                  return Container(
-                    width: 400.0, // Adjust the width as needed
-                    height: 50.0, // Adjust the height as needed
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      border: Border.all(
-                        color: Colors.purple,
-                        width: 2.0,
-                      ),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Opacity(
-                        opacity: _animation.value,
-                        child: const TextField(
-                          decoration: InputDecoration.collapsed(
-                            hintText: 'Enter The UserName',
-                          ),
-                        ),
-                      ),
-                    ),
-                  );
-                },
+              padding: const EdgeInsets.only(left: 20, right: 20),
+              child: TextFormField(
+                decoration: const InputDecoration(
+                  label: Text(
+                    "Enter your Email",
+                    style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
+                  ),
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.blue)),
+                ),
               ),
             ),
-
-            Padding(
-              padding: const EdgeInsets.all(5.0),
-              child: AnimatedBuilder(
-                animation: _animation,
-                builder: (context, child) {
-                  return Container(
-                    width: 350.0, // Adjust the width as needed
-                    height: 50.0, // Adjust the height as needed
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      border: Border.all(
-                        color: Colors.purple,
-                        width: 2.0,
-                      ),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Opacity(
-                        opacity: _animation.value,
-                        child: const TextField(
-                          decoration: InputDecoration.collapsed(
-                            hintText: 'Enter The Password',
-                          ),
-                        ),
-                      ),
-                    ),
-                  );
-                },
+            const SizedBox(height: 20,),
+             Padding(
+              padding: const EdgeInsets.only(left: 20, right: 20),
+              child: TextFormField(
+                decoration: const InputDecoration(
+                  label: Text(
+                    "Enter your Password ",
+                    style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
+                  ),
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.blue)),
+                ),
               ),
             ),
+            const SizedBox(height: 10),
             Center(
               child: InkWell(
                 onTap: () {
