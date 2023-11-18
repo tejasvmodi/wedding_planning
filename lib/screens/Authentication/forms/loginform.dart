@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wedding_application/screens/Authentication/forms/forgotpassword.dart';
 import 'package:wedding_application/screens/Home/home.dart';
+import 'package:wedding_application/screens/components/AppBar.dart';
 import 'package:wedding_application/screens/components/OnboardingScreen.dart';
 
 class LoginF extends StatefulWidget {
@@ -38,7 +39,7 @@ class _LoginFState extends State<LoginF> with TickerProviderStateMixin {
         child: Column(
           children: [
             const SizedBox(
-              height: 100,
+              height: 75,
             ),
             Title(
                 color: Colors.black,
@@ -127,7 +128,7 @@ class _LoginFState extends State<LoginF> with TickerProviderStateMixin {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const HomePage(),
+                      builder: (context) => const Appbar(),
                     ));
               },
               style: ButtonStyle(
