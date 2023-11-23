@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:icons_plus/icons_plus.dart';
 import 'package:wedding_application/screens/components/OnboardingScreen.dart';
 
 class drawer extends StatelessWidget {
@@ -32,7 +33,7 @@ class drawer extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.home),
+                const Icon(Bootstrap.shop),
                 const SizedBox(
                   width: 20,
                 ),

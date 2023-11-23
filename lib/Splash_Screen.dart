@@ -5,14 +5,15 @@ import 'package:wedding_application/screens/Home/home.dart';
 import 'package:wedding_application/screens/components/OnboardingScreen.dart';
 import 'package:wedding_application/screens/components/drawer.dart';
 
-class BottomNavigationBar123 extends StatefulWidget {
-  const BottomNavigationBar123({super.key});
+// ignore: camel_case_types
+class Splash_Screen extends StatefulWidget {
+  const Splash_Screen({super.key});
 
   @override
-  State<BottomNavigationBar123> createState() => _BottomNavigationBar123State();
+  State<Splash_Screen> createState() => _Splash_ScreenState();
 }
 
-class _BottomNavigationBar123State extends State<BottomNavigationBar123> {
+class _Splash_ScreenState extends State<Splash_Screen> {
   int _currentIndex = 0;
   final TextEditingController _searchController = TextEditingController();
 

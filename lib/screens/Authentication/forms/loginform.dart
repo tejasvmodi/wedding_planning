@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wedding_application/screens/Authentication/forms/forgotpassword.dart';
 import 'package:wedding_application/screens/components/AppBar.dart';
-import 'package:wedding_application/BottomNavigation.dart';
+import 'package:wedding_application/Splash_Screen.dart';
 import 'package:wedding_application/screens/components/OnboardingScreen.dart';
 
 class LoginF extends StatefulWidget {
@@ -128,7 +128,7 @@ class _LoginFState extends State<LoginF> with TickerProviderStateMixin {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) =>  const BottomNavigationBar123(),
+                      builder: (context) =>  const Splash_Screen(),
                     ));
               },
               style: ButtonStyle(
