@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:icons_plus/icons_plus.dart';
 import 'package:wedding_application/screens/Authentication/forms/forgotpassword.dart';
 import 'package:wedding_application/screens/Authentication/forms/loginform.dart';
 import 'package:wedding_application/screens/Home/home.dart';
@@ -44,7 +45,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
               ),
             ),
           ),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.chat)),
+          IconButton(onPressed: () {}, icon: const Icon(Bootstrap.chat)),
         ],
         backgroundColor: Colors.white38,
       ),
@@ -69,7 +70,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
           BottomNavigationBarItem(
             icon: IconButton(
               onPressed: () {},
-              icon: const Icon(Icons.home),
+              icon: const Icon(Bootstrap.house_exclamation),
             ),
             backgroundColor: Colors.red,
             label: "Home",
@@ -77,28 +78,28 @@ class _Splash_ScreenState extends State<Splash_Screen> {
           BottomNavigationBarItem(
               icon: IconButton(
                 onPressed: () {},
-                icon: const Icon(Icons.home_repair_service_rounded),
+                icon: const Icon(Bootstrap.shop),
               ),
               backgroundColor: Colors.redAccent,
               label: "vendor"),
           BottomNavigationBarItem(
               icon: IconButton(
                 onPressed: () {},
-                icon: const Icon(Icons.person),
+                icon: const Icon(Bootstrap.person),
               ),
               backgroundColor: Colors.redAccent,
               label: "Account"),
           BottomNavigationBarItem(
               icon: IconButton(
                 onPressed: () {},
-                icon: const Icon(Icons.home),
+                icon: const Icon(Bootstrap.card_checklist),
               ),
               backgroundColor: Colors.redAccent,
               label: "CheckList"),
           BottomNavigationBarItem(
             icon: IconButton(
               onPressed: () {},
-              icon: const Icon(Icons.check),
+              icon: const Icon(Bootstrap.lightbulb),
             ),
             backgroundColor: Colors.redAccent,
             label: "CheckList",

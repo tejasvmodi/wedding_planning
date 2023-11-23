@@ -14,10 +14,10 @@ class drawer extends StatelessWidget {
         children: [
           const SizedBox(
             height: 120,
-            //header of the Drawer 
+            //header of the Drawer
             child: DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.pinkAccent,
               ),
               child: Center(
                   child: Text(
@@ -26,10 +26,10 @@ class drawer extends StatelessWidget {
               )),
             ),
           ),
-         
-         //items of the drawer portions
+
+          //items of the drawer portions
           Padding(
-            padding: const EdgeInsets.only(top: 12, bottom: 30, left: 20),
+            padding: const EdgeInsets.only(top: 12, bottom: 20, left: 20),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -45,17 +45,17 @@ class drawer extends StatelessWidget {
                           builder: (context) => const OnboardingScreen(),
                         ));
                   },
-                  child: const Text("Vendors"),
+                  child: const Text("Vendors",),
                 )
               ],
             ),
           ),
-                      Padding(
-            padding: const EdgeInsets.only(top: 12, bottom: 30, left: 20),
+          Padding(
+            padding: const EdgeInsets.only(top: 12, bottom: 20, left: 20),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.home),
+                const Icon(Bootstrap.bell),
                 const SizedBox(
                   width: 20,
                 ),
@@ -67,17 +67,17 @@ class drawer extends StatelessWidget {
                           builder: (context) => const OnboardingScreen(),
                         ));
                   },
-                  child: const Text("item 2 "),
+                  child: const Text("Notification"),
                 )
               ],
             ),
           ),
-                      Padding(
-            padding: const EdgeInsets.only(top: 12, bottom: 30, left: 20),
+          Padding(
+            padding: const EdgeInsets.only(top: 12, bottom: 20, left: 20),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.home),
+                const Icon(Bootstrap.bag_check),
                 const SizedBox(
                   width: 20,
                 ),
@@ -89,17 +89,17 @@ class drawer extends StatelessWidget {
                           builder: (context) => const OnboardingScreen(),
                         ));
                   },
-                  child: const Text("item 3 "),
+                  child: const Text("Budget"),
                 )
               ],
             ),
           ),
-                      Padding(
-            padding: const EdgeInsets.only(top: 12, bottom: 30, left: 20),
+          Padding(
+            padding: const EdgeInsets.only(top: 12, bottom: 20, left: 20),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.home),
+                const Icon(Bootstrap.messenger),
                 const SizedBox(
                   width: 20,
                 ),
@@ -111,17 +111,17 @@ class drawer extends StatelessWidget {
                           builder: (context) => const OnboardingScreen(),
                         ));
                   },
-                  child: const Text("item 4 "),
+                  child: const Text("Collaboration"),
                 )
               ],
             ),
           ),
-                      Padding(
-            padding: const EdgeInsets.only(top: 12, bottom: 30, left: 20),
+          Padding(
+            padding: const EdgeInsets.only(top: 12, bottom: 20, left: 20),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.home),
+                const Icon(Bootstrap.card_checklist),
                 const SizedBox(
                   width: 20,
                 ),
@@ -133,17 +133,17 @@ class drawer extends StatelessWidget {
                           builder: (context) => const OnboardingScreen(),
                         ));
                   },
-                  child: const Text("item 5 "),
+                  child: const Text("CheckList "),
                 )
               ],
             ),
           ),
-                      Padding(
-            padding: const EdgeInsets.only(top: 12, bottom: 30, left: 20),
+          Padding(
+            padding: const EdgeInsets.only(top: 12, bottom: 20, left: 20),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.home),
+                const Icon(Bootstrap.postage),
                 const SizedBox(
                   width: 20,
                 ),
@@ -155,17 +155,17 @@ class drawer extends StatelessWidget {
                           builder: (context) => const OnboardingScreen(),
                         ));
                   },
-                  child: const Text("item 6 "),
+                  child: const Text("Invitation "),
                 )
               ],
             ),
           ),
-                      Padding(
-            padding: const EdgeInsets.only(top: 12, bottom: 30, left: 20),
+          Padding(
+            padding: const EdgeInsets.only(top: 12, bottom: 20, left: 20),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(Icons.home),
+                const Icon(Bootstrap.star),
                 const SizedBox(
                   width: 20,
                 ),
@@ -177,7 +177,51 @@ class drawer extends StatelessWidget {
                           builder: (context) => const OnboardingScreen(),
                         ));
                   },
-                  child: const Text("item 7"),
+                  child: const Text("GuestList"),
+                )
+              ],
+            ),
+          ),
+           Padding(
+            padding: const EdgeInsets.only(top: 12, bottom: 20, left: 20),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Icon(Bootstrap.person),
+                const SizedBox(
+                  width: 20,
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const OnboardingScreen(),
+                        ));
+                  },
+                  child: const Text("Account"),
+                )
+              ],
+            ),
+          ),
+           Padding(
+            padding: const EdgeInsets.only(top: 12, bottom: 20, left: 20),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Icon(Bootstrap.question),
+                const SizedBox(
+                  width: 20,
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const OnboardingScreen(),
+                        ));
+                  },
+                  child: const Text("Help"),
                 )
               ],
             ),
