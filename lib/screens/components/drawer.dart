@@ -44,7 +44,7 @@ class drawer extends StatelessWidget {
                           builder: (context) => const OnboardingScreen(),
                         ));
                   },
-                  child: const Text("item 1 "),
+                  child: const Text("Vendors"),
                 )
               ],
             ),

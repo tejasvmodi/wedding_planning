@@ -30,24 +30,30 @@ class _BottomNavigationBar123State extends State<BottomNavigationBar123> {
       appBar: AppBar(
         centerTitle: true,
         actions: <Widget>[
-         Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: SizedBox(
-            width: 280, // Adjust the width as needed
-            child: TextField(
-              controller: _searchController,
-              decoration: const InputDecoration(
-                hintText: "Search Here ",
-                border: OutlineInputBorder(),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
+              width: 280, // Adjust the width as needed
+              child: TextField(
+                controller: _searchController,
+                decoration: const InputDecoration(
+                  hintText: "Search Here... ",
+                  border: OutlineInputBorder(),
+                ),
               ),
             ),
           ),
-        ),
           IconButton(onPressed: () {}, icon: const Icon(Icons.chat)),
         ],
         backgroundColor: Colors.white38,
       ),
+      //drawer of the application...
+    
       drawer: const drawer(),
+
+      //...body ....
+      //.
+
       body: _Items[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
