@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wedding_application/screens/Authentication/forms/forgotpassword.dart';
 import 'package:wedding_application/screens/components/AppBar.dart';
-import 'package:wedding_application/screens/components/BottomNavigation.dart';
+import 'package:wedding_application/BottomNavigation.dart';
 import 'package:wedding_application/screens/components/OnboardingScreen.dart';
 
 class LoginF extends StatefulWidget {
