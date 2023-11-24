@@ -20,7 +20,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
 
   // ignore: non_constant_identifier_names
   final List<Widget> _Items = [
-    const HomePage(),
+   HomePage(),
     const ForgotPassword(),
     const OnboardingScreen(),
     const LoginF(),
