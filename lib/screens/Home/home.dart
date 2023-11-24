@@ -1,26 +1,23 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:wedding_application/Splash_Screen.dart';
 import 'package:wedding_application/screens/components/Mycard.dart';
+import 'package:wedding_application/screens/components/OnboardingScreen.dart';
+import 'package:wedding_application/screens/components/horizontalcard.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
+class HomePage extends StatelessWidget {
   final List<String> items = [
     "assets/images/indianwedding1.png",
     "assets/images/weddingplanning3.png",
   ];
+
+  HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
+      body: SingleChildScrollView(
+        child:
+            Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
           CarouselSlider(
             options: CarouselOptions(
               height: 300.0,
@@ -60,20 +57,53 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          SingleChildScrollView(
+          const SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
                 MyCard(
-                    imageUrl: "assets/images/indianwedding.png", text: "decoration"),
+                    imageUrl: "assets/images/indianwedding.png",
+                    text: "venue",
+                    className: "HomePage"),
                 MyCard(
-                    imageUrl: "assets/images/indianwedding2.png", text: ""),
+                    imageUrl: "assets/images/indianwedding2.png",
+                    text: "catering",
+                    className: "HomePage"),
                 MyCard(
-                    imageUrl: "assets/images/weddingwallpepar.png", text: "decoration"),
+                    imageUrl: "assets/images/weddingwallpepar.png",
+                    text: "photography",
+                    className: "HomePage"),
+                MyCard(
+                    imageUrl: "assets/images/weeding.png",
+                    text: "decor",
+                    className: "HomePage"),
+              ],
+            ),
+          ),
+          const SingleChildScrollView(
+            child: Column(
+              children: [
+                //there is horizontal card widget 
+                Horizontalcard(
+                  imageUrl1: "assets/images/budget.png",
+                  imageUrl2: 'assets/images/invitation.png',
+                  text1: 'Budget',
+                  text2: 'Invitation',
+                  className1: 'HomePage',
+                  className2: 'HomePage',
+                ),
+                Horizontalcard(
+                  imageUrl1: "assets/images/Guest_list.png",
+                  imageUrl2: 'assets/images/checklist.png',
+                  text1: 'Guest-List',
+                  text2: 'Check-List',
+                  className1: 'HomePage',
+                  className2: 'HomePage',
+                ),
               ],
             ),
           )
-        ],
+        ]),
       ),
     );
   }
