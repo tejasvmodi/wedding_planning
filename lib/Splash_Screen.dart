@@ -72,7 +72,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
               onPressed: () {},
               icon: const Icon(Bootstrap.house_exclamation),
             ),
-            backgroundColor: Colors.red,
+            backgroundColor: Colors.pinkAccent,
             label: "Home",
           ),
           BottomNavigationBarItem(
@@ -80,28 +80,28 @@ class _Splash_ScreenState extends State<Splash_Screen> {
                 onPressed: () {},
                 icon: const Icon(Bootstrap.shop),
               ),
-              backgroundColor: Colors.redAccent,
+              backgroundColor: Colors.pinkAccent,
               label: "vendor"),
           BottomNavigationBarItem(
               icon: IconButton(
                 onPressed: () {},
                 icon: const Icon(Bootstrap.person),
               ),
-              backgroundColor: Colors.redAccent,
+              backgroundColor: Colors.pinkAccent,
               label: "Account"),
           BottomNavigationBarItem(
               icon: IconButton(
                 onPressed: () {},
                 icon: const Icon(Bootstrap.card_checklist),
               ),
-              backgroundColor: Colors.redAccent,
+              backgroundColor: Colors.pinkAccent,
               label: "CheckList"),
           BottomNavigationBarItem(
             icon: IconButton(
               onPressed: () {},
               icon: const Icon(Bootstrap.lightbulb),
             ),
-            backgroundColor: Colors.redAccent,
+            backgroundColor: Colors.pinkAccent,
             label: "CheckList",
           ),
         ],

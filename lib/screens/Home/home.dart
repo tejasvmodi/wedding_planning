@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:wedding_application/Splash_Screen.dart';
+import 'package:wedding_application/screens/components/cardWidget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -46,9 +47,11 @@ class _HomePageState extends State<HomePage> {
             }).toList(),
           ),
           Container(
-            color: Colors.redAccent,
+            color: Colors.pinkAccent,
+            padding: const EdgeInsets.all(5.0),
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
+              textDirection: TextDirection.rtl,
               children: [
                 Text(
                   "120 Days Until the Big Day",
@@ -57,7 +60,8 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          
+        
+       
         ],
       ),
     );
