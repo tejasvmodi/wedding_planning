@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:wedding_application/Splash_Screen.dart';
-import 'package:wedding_application/screens/components/cardWidget.dart';
+import 'package:wedding_application/screens/components/Mycard.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
               return Builder(
                 builder: (BuildContext context) {
                   return SizedBox(
-                    width: 700,
+                    width: MediaQuery.of(context).size.width,
                     child: Image.asset(
                       assetPath,
                       fit: BoxFit.fitWidth,
@@ -60,8 +60,19 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-        
-       
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                MyCard(
+                    imageUrl: "assets/images/indianwedding.png", text: "decoration"),
+                MyCard(
+                    imageUrl: "assets/images/indianwedding2.png", text: ""),
+                MyCard(
+                    imageUrl: "assets/images/weddingwallpepar.png", text: "decoration"),
+              ],
+            ),
+          )
         ],
       ),
     );
