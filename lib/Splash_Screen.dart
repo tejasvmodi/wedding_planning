@@ -17,8 +17,7 @@ class Splash_Screen extends StatefulWidget {
 
 class _Splash_ScreenState extends State<Splash_Screen> {
   int _currentIndex = 0;
-  final TextEditingController _searchController = TextEditingController();
-
+ 
   // ignore: non_constant_identifier_names
   final List<Widget> _Items = [
    HomePage(),
@@ -30,26 +29,6 @@ class _Splash_ScreenState extends State<Splash_Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        actions: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: SizedBox(
-              width: 280, // Adjust the width as needed
-              child: TextField(
-                controller: _searchController,
-                decoration: const InputDecoration(
-                  hintText: "Search Here... ",
-                  border: OutlineInputBorder(),
-                ),
-              ),
-            ),
-          ),
-          IconButton(onPressed: () {}, icon: const Icon(Bootstrap.chat)),
-        ],
-        backgroundColor: Colors.white38,
-      ),
       //drawer of the application...
     
       drawer: const drawer(),
