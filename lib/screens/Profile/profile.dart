@@ -13,101 +13,183 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 10,
-          ),
-          Center(
-            child: Container(
-              height: 200,
-              width: 250,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                border: Border.all(color: Colors.black, width: 5),
-                image: const DecorationImage(
-                    image: AssetImage("assets/images/budget.png")),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 10,
+            ),
+            Center(
+              child: Column(
+                children: [
+                  Container(
+                    height: 200,
+                    width: 250,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.black, width: 5),
+                      image: const DecorationImage(
+                          image: AssetImage("assets/images/budget.png")),
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 2,bottom: 10 ),
+                    child: Text("Tejasv",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),),
+                  )
+                ],
               ),
             ),
-          ),
-          const Padding(
-            padding: EdgeInsets.only(top: 05, bottom: 10, left: 40),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Icon(Bootstrap.bag_check),
-                SizedBox(
-                  width: 20,
-                ),
-                Text("Budget"),
-              ],
-            ),
-          ),
-          const SizedBox(
-              width: 300,
-              child: Divider(
-                color: Colors.black,
-              )
+            const Padding(
+              padding: EdgeInsets.only( top: 10,bottom: 10, left: 40),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(Bootstrap.bag_check),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text("My Booking",style: TextStyle(fontSize: 16),),
+                ],
               ),
-
-
-          const Padding(
-            padding: EdgeInsets.only(top: 12, bottom: 20, left: 40),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Icon(Bootstrap.bag_check),
-                SizedBox(
-                  width: 20,
-                ),
-                Text("Budget"),
-              ],
             ),
-          ),
-
-          const Padding(
-            padding: EdgeInsets.only(top: 12, bottom: 20, left: 40),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Icon(Bootstrap.bag_check),
-                SizedBox(
-                  width: 20,
+            const SizedBox(
+                width: 300,
+                child: Divider(
+                  color: Colors.black26,
+                )
                 ),
-                Text("Budget"),
-              ],
+      
+      
+            const Padding(
+              padding: EdgeInsets.only( top: 10,bottom: 10, left: 40),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(Bootstrap.diamond_half),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text("Recommendation",style: TextStyle(fontSize: 16)),
+                ],
+              ),
             ),
-          ),
-
-          const Padding(
-            padding: EdgeInsets.only(top: 12, bottom: 20, left: 40),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Icon(Bootstrap.bag_check),
-                SizedBox(
-                  width: 20,
+             const SizedBox(
+                width: 300,
+                child: Divider(
+                  color: Colors.black26,
+                )
                 ),
-                Text("Budget"),
-              ],
+            const Padding(
+              padding: EdgeInsets.only( bottom: 10,top: 10, left: 40),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(Bootstrap.map_fill),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text("Location",style: TextStyle(fontSize: 16)),
+                ],
+              ),
             ),
-          ),
-
-          const Padding(
-            padding: EdgeInsets.only(top: 12, bottom: 20, left: 40),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Icon(Bootstrap.bag_check),
-                SizedBox(
-                  width: 20,
+            const SizedBox(
+                width: 300,
+                child: Divider(
+                  color: Colors.black26,
+                )
                 ),
-                Text("Budget"),
-              ],
+            const Padding(
+              padding: EdgeInsets.only( top: 10 ,bottom: 10, left: 40),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(Bootstrap.people_fill),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text("Join A Wedding",style: TextStyle(fontSize: 16)),
+                ],
+              ),
             ),
-          ),
-          
-        ],
+            const SizedBox(
+                width: 300,
+                child: Divider(
+                  color: Colors.black26,
+                )
+                ),
+            const Padding(
+              padding: EdgeInsets.only(top: 10, bottom: 10, left: 40),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(Bootstrap.telegram),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text("Collaboration",style: TextStyle(fontSize: 16)),
+                ],
+              ),
+            ),
+             const SizedBox(
+                width: 300,
+                child: Divider(
+                  color: Colors.black26,
+                )
+                ),
+            const Padding(
+              padding: EdgeInsets.only(top: 10, bottom: 10, left: 40),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(Bootstrap.phone_fill),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text("Contact Support",style: TextStyle(fontSize: 16)),
+                ],
+              ),
+            ),
+             const SizedBox(
+                width: 300,
+                child: Divider(
+                  color: Colors.black26,
+                )
+                ),
+            const Padding(
+              padding: EdgeInsets.only(top: 10, bottom: 10, left: 40),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(Bootstrap.pencil_fill),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text("Write a Review",style: TextStyle(fontSize: 16)),
+                ],
+              ),
+            ),
+             const SizedBox(
+                width: 300,
+                child: Divider(
+                  color: Colors.black26,
+                )
+                ),
+            const Padding(
+              padding: EdgeInsets.only(top: 10, bottom: 10, left: 40),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Icon(Bootstrap.outlet),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text("Log In/Out",style: TextStyle(fontSize: 16)),
+                ],
+              ),
+            ),
+      
+          ],
+        ),
       ),
     );
   }
