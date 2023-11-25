@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:wedding_application/screens/Home/home.dart';
 import 'package:wedding_application/screens/components/OnboardingScreen.dart';

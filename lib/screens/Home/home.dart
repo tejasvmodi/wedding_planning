@@ -2,10 +2,9 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:wedding_application/screens/components/CustomAppBar.dart';
 import 'package:wedding_application/screens/components/Mycard.dart';
-import 'package:wedding_application/screens/components/OnboardingScreen.dart';
 import 'package:wedding_application/screens/components/drawer.dart';
 import 'package:wedding_application/screens/components/horizontalcard.dart';
-import 'package:wedding_application/screens/components/CustomAppBar.dart';
+
 
 class HomePage extends StatelessWidget {
   final List<String> items = [

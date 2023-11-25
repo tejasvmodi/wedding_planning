@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
-import 'package:wedding_application/screens/components/OnboardingScreen.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});

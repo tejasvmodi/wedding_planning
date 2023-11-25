@@ -5,7 +5,7 @@ import 'package:wedding_application/screens/Authentication/forms/loginform.dart'
 import 'package:wedding_application/screens/Home/home.dart';
 import 'package:wedding_application/screens/Profile/profile.dart';
 import 'package:wedding_application/screens/components/OnboardingScreen.dart';
-import 'package:wedding_application/screens/components/drawer.dart';
+
 
 // ignore: camel_case_types
 class Splash_Screen extends StatefulWidget {
