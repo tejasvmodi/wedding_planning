@@ -17,10 +17,10 @@ class Splash_Screen extends StatefulWidget {
 
 class _Splash_ScreenState extends State<Splash_Screen> {
   int _currentIndex = 0;
- 
+
   // ignore: non_constant_identifier_names
   final List<Widget> _Items = [
-   HomePage(),
+    HomePage(),
     const ForgotPassword(),
     const Profile(),
     const LoginF(),
@@ -29,10 +29,6 @@ class _Splash_ScreenState extends State<Splash_Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //drawer of the application...
-    
-      drawer: const drawer(),
-
       //...body ....
       //.
 

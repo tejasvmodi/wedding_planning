@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:wedding_application/screens/components/CustomAppBar.dart';
 import 'package:wedding_application/screens/components/Mycard.dart';
 import 'package:wedding_application/screens/components/OnboardingScreen.dart';
+import 'package:wedding_application/screens/components/drawer.dart';
 import 'package:wedding_application/screens/components/horizontalcard.dart';
 import 'package:wedding_application/screens/components/CustomAppBar.dart';
 
@@ -17,7 +18,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: CustomAppBar(),
+      appBar:const CustomAppBar(),
+      drawer: const drawer(),
       body: Container(
         child: SingleChildScrollView(
           child:

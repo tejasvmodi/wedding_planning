@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
-class CustomAppBar extends StatefulWidget {
+class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
   const CustomAppBar({Key? key}) : super(key: key);
 
   @override
   State<CustomAppBar> createState() => _CustomAppBarState();
+
+  @override
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
 
 class _CustomAppBarState extends State<CustomAppBar> {
@@ -19,7 +22,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: SizedBox(
-            width: 280, // Adjust the width as needed
+            width: 280,
             child: TextField(
               controller: _searchController,
               decoration: const InputDecoration(
@@ -33,5 +36,6 @@ class _CustomAppBarState extends State<CustomAppBar> {
       ],
       backgroundColor: Colors.white38,
     );
+    
   }
 }

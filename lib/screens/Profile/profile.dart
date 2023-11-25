@@ -13,6 +13,13 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Center(
+            widthFactor: 2.5,
+            child: Text(
+              "Account",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 25),
+            )),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -33,14 +40,20 @@ class _ProfileState extends State<Profile> {
                     ),
                   ),
                   const Padding(
-                    padding: EdgeInsets.only(top: 2,bottom: 10 ),
-                    child: Text("Tejasv",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),),
+                    padding: EdgeInsets.only(top: 2, bottom: 10),
+                    child: Text(
+                      "Tejasv",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20),
+                    ),
                   )
                 ],
               ),
             ),
             const Padding(
-              padding: EdgeInsets.only( top: 10,bottom: 10, left: 40),
+              padding: EdgeInsets.only(top: 10, bottom: 10, left: 40),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -48,7 +61,10 @@ class _ProfileState extends State<Profile> {
                   SizedBox(
                     width: 20,
                   ),
-                  Text("My Booking",style: TextStyle(fontSize: 16),),
+                  Text(
+                    "My Booking",
+                    style: TextStyle(fontSize: 16),
+                  ),
                 ],
               ),
             ),
@@ -56,12 +72,9 @@ class _ProfileState extends State<Profile> {
                 width: 300,
                 child: Divider(
                   color: Colors.black26,
-                )
-                ),
-      
-      
+                )),
             const Padding(
-              padding: EdgeInsets.only( top: 10,bottom: 10, left: 40),
+              padding: EdgeInsets.only(top: 10, bottom: 10, left: 40),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -69,18 +82,17 @@ class _ProfileState extends State<Profile> {
                   SizedBox(
                     width: 20,
                   ),
-                  Text("Recommendation",style: TextStyle(fontSize: 16)),
+                  Text("Recommendation", style: TextStyle(fontSize: 16)),
                 ],
               ),
             ),
-             const SizedBox(
+            const SizedBox(
                 width: 300,
                 child: Divider(
                   color: Colors.black26,
-                )
-                ),
+                )),
             const Padding(
-              padding: EdgeInsets.only( bottom: 10,top: 10, left: 40),
+              padding: EdgeInsets.only(bottom: 10, top: 10, left: 40),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -88,7 +100,7 @@ class _ProfileState extends State<Profile> {
                   SizedBox(
                     width: 20,
                   ),
-                  Text("Location",style: TextStyle(fontSize: 16)),
+                  Text("Location", style: TextStyle(fontSize: 16)),
                 ],
               ),
             ),
@@ -96,10 +108,9 @@ class _ProfileState extends State<Profile> {
                 width: 300,
                 child: Divider(
                   color: Colors.black26,
-                )
-                ),
+                )),
             const Padding(
-              padding: EdgeInsets.only( top: 10 ,bottom: 10, left: 40),
+              padding: EdgeInsets.only(top: 10, bottom: 10, left: 40),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -107,7 +118,7 @@ class _ProfileState extends State<Profile> {
                   SizedBox(
                     width: 20,
                   ),
-                  Text("Join A Wedding",style: TextStyle(fontSize: 16)),
+                  Text("Join A Wedding", style: TextStyle(fontSize: 16)),
                 ],
               ),
             ),
@@ -115,8 +126,7 @@ class _ProfileState extends State<Profile> {
                 width: 300,
                 child: Divider(
                   color: Colors.black26,
-                )
-                ),
+                )),
             const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10, left: 40),
               child: Row(
@@ -126,16 +136,15 @@ class _ProfileState extends State<Profile> {
                   SizedBox(
                     width: 20,
                   ),
-                  Text("Collaboration",style: TextStyle(fontSize: 16)),
+                  Text("Collaboration", style: TextStyle(fontSize: 16)),
                 ],
               ),
             ),
-             const SizedBox(
+            const SizedBox(
                 width: 300,
                 child: Divider(
                   color: Colors.black26,
-                )
-                ),
+                )),
             const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10, left: 40),
               child: Row(
@@ -145,16 +154,15 @@ class _ProfileState extends State<Profile> {
                   SizedBox(
                     width: 20,
                   ),
-                  Text("Contact Support",style: TextStyle(fontSize: 16)),
+                  Text("Contact Support", style: TextStyle(fontSize: 16)),
                 ],
               ),
             ),
-             const SizedBox(
+            const SizedBox(
                 width: 300,
                 child: Divider(
                   color: Colors.black26,
-                )
-                ),
+                )),
             const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10, left: 40),
               child: Row(
@@ -164,16 +172,15 @@ class _ProfileState extends State<Profile> {
                   SizedBox(
                     width: 20,
                   ),
-                  Text("Write a Review",style: TextStyle(fontSize: 16)),
+                  Text("Write a Review", style: TextStyle(fontSize: 16)),
                 ],
               ),
             ),
-             const SizedBox(
+            const SizedBox(
                 width: 300,
                 child: Divider(
                   color: Colors.black26,
-                )
-                ),
+                )),
             const Padding(
               padding: EdgeInsets.only(top: 10, bottom: 10, left: 40),
               child: Row(
@@ -183,11 +190,10 @@ class _ProfileState extends State<Profile> {
                   SizedBox(
                     width: 20,
                   ),
-                  Text("Log In/Out",style: TextStyle(fontSize: 16)),
+                  Text("Log In/Out", style: TextStyle(fontSize: 16)),
                 ],
               ),
             ),
-      
           ],
         ),
       ),
