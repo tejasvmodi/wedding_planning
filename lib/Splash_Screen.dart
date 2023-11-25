@@ -3,6 +3,7 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:wedding_application/screens/Authentication/forms/forgotpassword.dart';
 import 'package:wedding_application/screens/Authentication/forms/loginform.dart';
 import 'package:wedding_application/screens/Home/home.dart';
+import 'package:wedding_application/screens/Profile/profile.dart';
 import 'package:wedding_application/screens/components/OnboardingScreen.dart';
 import 'package:wedding_application/screens/components/drawer.dart';
 
@@ -22,7 +23,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
   final List<Widget> _Items = [
    HomePage(),
     const ForgotPassword(),
-    const OnboardingScreen(),
+    const Profile(),
     const LoginF(),
     const OnboardingScreen()
   ];
