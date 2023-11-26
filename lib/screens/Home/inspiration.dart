@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:wedding_application/screens/components/category_bar.dart';
-import 'package:wedding_application/screens/components/custom_inspiration_app_bar.dart';
-import 'package:wedding_application/screens/components/explore_tile.dart';
-import 'package:wedding_application/screens/components/persistance_header.dart';
+import 'package:wedding_application/screens/components/Inspiration_screen_components/category_bar.dart';
+import 'package:wedding_application/screens/components/Inspiration_screen_components/custom_inspiration_app_bar.dart';
+import 'package:wedding_application/screens/components/Inspiration_screen_components/explore_tile.dart';
+import 'package:wedding_application/screens/components/Inspiration_screen_components/persistance_header.dart';
 
 class Inspiration extends StatelessWidget {
   const Inspiration({super.key});
