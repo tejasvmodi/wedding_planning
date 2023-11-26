@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:wedding_application/screens/Authentication/forms/forgotpassword.dart';
-import 'package:wedding_application/screens/Authentication/forms/loginform.dart';
+
 import 'package:wedding_application/screens/Home/checklist.dart';
 import 'package:wedding_application/screens/Home/home.dart';
 import 'package:wedding_application/screens/Home/inspiration.dart';
 import 'package:wedding_application/screens/Profile/profile.dart';
-import 'package:wedding_application/screens/components/OnboardingScreen.dart';
 
 
 // ignore: camel_case_types
