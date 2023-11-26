@@ -32,7 +32,8 @@ class HomePage extends StatelessWidget {
                 autoPlayCurve: Curves.fastOutSlowIn,
                 enableInfiniteScroll: true,
                 autoPlayAnimationDuration: const Duration(milliseconds: 300),
-                viewportFraction: 0.8,
+                viewportFraction: 1.0,
+                scrollDirection: Axis.vertical
               ),
               items: items.map((assetPath) {
                 return Builder(
