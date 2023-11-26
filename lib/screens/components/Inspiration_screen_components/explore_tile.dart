@@ -8,7 +8,18 @@ class ExploreTil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+     
       color: Colors.pink,
+      child:  Stack(
+        alignment: Alignment.topRight,
+        children: [
+           const Image(image: AssetImage("assets/images/weeding.png"),fit: BoxFit.cover,),
+          Container(
+            padding: const EdgeInsets.all(10),
+            child: const Icon(Icons.collections_rounded,color: Colors.white,),
+          ),
+        ],
+      ),
     );
   }
 }
