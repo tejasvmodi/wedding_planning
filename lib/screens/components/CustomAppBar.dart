@@ -25,9 +25,10 @@ class _CustomAppBarState extends State<CustomAppBar> {
             width: 280,
             child: TextField(
               controller: _searchController,
-              decoration: const InputDecoration(
+              decoration:  InputDecoration(
                 hintText: "Search Here... ",
                 border: OutlineInputBorder(),
+                prefixIcon: Icon(Icons.search,size: 24,color: Colors.grey.shade500),
               ),
             ),
           ),

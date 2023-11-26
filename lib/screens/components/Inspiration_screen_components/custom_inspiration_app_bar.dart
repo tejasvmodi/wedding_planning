@@ -18,14 +18,14 @@ class ExplorePage extends StatelessWidget {
         child: TextField(
           decoration: InputDecoration(
             hintText: 'Search ',
-            hintStyle: TextStyle(fontSize: 16.5,fontWeight: FontWeight.w500),
+            hintStyle: const TextStyle(fontSize: 16.5,fontWeight: FontWeight.w500),
             prefixIcon: Icon(
               Icons.search,
               size: 24,
               color: Colors.grey.shade500,
             ),
           ),
-          style: TextStyle(color: Colors.black,fontSize: 16.5),
+          style: const TextStyle(color: Colors.black,fontSize: 16.5),
         ),
       ),
     );

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:wedding_application/screens/Authentication/forms/forgotpassword.dart';
 
-import 'package:wedding_application/screens/Home/checklist.dart';
-import 'package:wedding_application/screens/Home/home.dart';
-import 'package:wedding_application/screens/Home/inspiration.dart';
+import 'package:wedding_application/screens/Pages/checklist.dart';
+import 'package:wedding_application/screens/Pages/home.dart';
+import 'package:wedding_application/screens/Pages/inspiration.dart';
 import 'package:wedding_application/screens/Profile/profile.dart';
 
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
-import 'package:wedding_application/screens/Home/checklist.dart';
+import 'package:wedding_application/screens/Pages/checklist.dart';
 import 'package:wedding_application/screens/Profile/profile.dart';
 import 'package:wedding_application/screens/components/OnboardingScreen.dart';
 
