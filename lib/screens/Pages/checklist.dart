@@ -49,15 +49,29 @@ class _CheckListState extends State<CheckList> {
       ),
       body: ListView.builder(
           itemBuilder: (context, index) {
-            return ListTile(
-              title: Text(choice[index]),
-              tileColor: items[index] ? Colors.grey : null,
-              trailing: items[index] ? const Icon(Bootstrap.check) : null,
-              onTap: () {
-                if (!items[index]) {
-                  _toggleremover(index);
-                }
-              },
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                
+                ListTile(
+                  title: Padding(
+                    padding: const EdgeInsets.only(left: 8),
+                    child: Text(choice[index]),
+                  ),
+                  tileColor: items[index] ? Colors.grey : null,
+                  trailing: items[index] ? const Icon(Bootstrap.check) : null,
+                  onTap: () {
+                    if (!items[index]) {
+                      _toggleremover(index);
+                    }
+                  },
+                ),
+                 SizedBox(
+                  // width: ,
+                  child: Divider(endIndent: 20,indent: 23,color: Colors.grey.shade600,),
+                )
+              ],
+              
             );
           },
           itemCount: choice.length),

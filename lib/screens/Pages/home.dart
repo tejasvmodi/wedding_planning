@@ -68,11 +68,11 @@ class HomePage extends StatelessWidget {
               child: Row(
                 children: [
                   MyCard(
-                      imageUrl: "assets/images/indianwedding.png",
+                      imageUrl: "assets/images/venue.png",
                       text: "venue",
                       className: "HomePage"),
                   MyCard(
-                      imageUrl: "assets/images/indianwedding2.png",
+                      imageUrl: "assets/images/catering.png",
                       text: "catering",
                       className: "HomePage"),
                   MyCard(
@@ -80,7 +80,7 @@ class HomePage extends StatelessWidget {
                       text: "photography",
                       className: "HomePage"),
                   MyCard(
-                      imageUrl: "assets/images/weeding.png",
+                      imageUrl: "assets/images/decoration.png",
                       text: "decor",
                       className: "HomePage"),
                 ],
