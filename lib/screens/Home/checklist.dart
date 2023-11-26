@@ -9,22 +9,21 @@ class CheckList extends StatefulWidget {
 }
 
 class _CheckListState extends State<CheckList> {
-  final List<String> choice = [
+  List<String> choice = [
     "item 1",
     "item 2",
     "item 3",
     "item 4",
   ];
 
- late List<bool> items;
-   
-    @override
-   void initState() {
-     super.initState(
-     );
-     items= List.generate(choice.length, (index) => false);
-     
-   }
+  late List<bool> items;
+
+  @override
+  void initState() {
+    super.initState();
+    items = List.generate(choice.length, (index) => false);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,29 +36,56 @@ class _CheckListState extends State<CheckList> {
           ),
         ),
         actions: [
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.playlist_add_check_circle_rounded))
+          TextButton(
+            onPressed: () {
+              ClearOne();
+            },
+            child: const Text(
+              "Clear",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
         ],
       ),
-      body: ListView.builder(itemBuilder: 
-      (context, index) {
-        return ListTile(
-          title: Text(choice[index]),
-          tileColor: items[index]?Colors.grey:null,
-          trailing: items[index]?const Icon(Bootstrap.check):null,
-          onTap: () {
-            _toggleremover(index);
+      body: ListView.builder(
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: Text(choice[index]),
+              tileColor: items[index] ? Colors.grey : null,
+              trailing: items[index] ? const Icon(Bootstrap.check) : null,
+              onTap: () {
+                if (!items[index]) {
+                  _toggleremover(index);
+                }
+              },
+            );
           },
-        );
-      },
-      itemCount: choice.length),
+          itemCount: choice.length),
     );
   }
 
   void _toggleremover(int index) {
     setState(() {
-     items[index]=!items[index];
+      items[index] = true;
+    });
+  }
+
+
+  // ignore: non_constant_identifier_names
+  void ClearOne() {
+    setState(() {
+      final List<int> removeitems = [];
+      for (int i = 0; i < choice.length; i++) {
+        if (items[i]) {
+          removeitems.add(i);
+        }
+      }
+
+      for (int i = removeitems.length - 1; i >= 0; i--) {
+        int index = removeitems[i];
+        choice.removeAt(index);
+        items.removeAt(index);
+      }
     });
   }
 }

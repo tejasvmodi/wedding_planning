@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
+import 'package:wedding_application/screens/Home/checklist.dart';
+import 'package:wedding_application/screens/Profile/profile.dart';
 import 'package:wedding_application/screens/components/OnboardingScreen.dart';
 
 class drawer extends StatelessWidget {
@@ -130,7 +132,7 @@ class drawer extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const OnboardingScreen(),
+                          builder: (context) => const CheckList(),
                         ));
                   },
                   child: const Text("CheckList "),
@@ -196,7 +198,7 @@ class drawer extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const OnboardingScreen(),
+                          builder: (context) => const Profile(),
                         ));
                   },
                   child: const Text("Account"),
