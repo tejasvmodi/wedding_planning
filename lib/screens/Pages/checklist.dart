@@ -58,7 +58,8 @@ class _CheckListState extends State<CheckList> {
                     padding: const EdgeInsets.only(left: 8),
                     child: Text(choice[index]),
                   ),
-                  tileColor: items[index] ? Colors.grey : null,
+                 
+                  tileColor: items[index] ? Colors.grey.shade400: null,
                   trailing: items[index] ? const Icon(Bootstrap.check) : null,
                   onTap: () {
                     if (!items[index]) {

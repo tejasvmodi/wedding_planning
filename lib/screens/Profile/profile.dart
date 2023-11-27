@@ -14,7 +14,7 @@ class _ProfileState extends State<Profile> {
     return Scaffold(
       appBar: AppBar(
         title: const Center(
-            widthFactor: 2.5,
+            widthFactor: 2.6,
             child: Text(
               "Account",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 25),
             )),
